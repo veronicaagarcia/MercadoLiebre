@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="fondo">
+    <header>
+        <div class="header-logo logo-formulario" >
+            <div class="logo">
+                <img class="movimiento" src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+            </div>
+        </div>
+    </header>
+    <h1 class="titulo-login">Crea tu usuario</h1>
+    <div class="caja-formulario">
+        <form>
+            <br><br>
+            <div class="formulario-login">
+                <label>Nombre y Apellido</label><br><br>
+                <input class="cuadro-login" type="text" required pattern="[A-Za-z]{4}" minlength="4" title="Debe escribir su nombre completo y debe contener al menos 2 letras">
+                <br><br>
+                <label>Nombre de Usuario</label><br><br>
+                <input class="cuadro-login" type="text" required pattern="[A-Za-z]{2}[0-9]{2}" minlength="4" title="Su nombre de usuario debe contener al menos 2 letras y 2 numeros">
+                <br><br>
+                <label>Fecha de Nacimiento</label><br><br>
+                <input class="cuadro-login" type="date" required pattern="[0-9]{6}" title="Debe escribir su fecha de nacimiento completa">
+                <br><br>
+                <label>Domicilio</label><br><br>
+                <input class="cuadro-login" type="text" required pattern="[A-Za-z]{1}[0-9]{1}" minlength="4" title="Debe escribir su domicilio">
+                <br><br>
+                <label>Perfil de usuario</label><br><br>
+                <input type="radio" name="perfilUsuario">
+                <label>Comprador</label>
+                <input type="radio" name="perfilUsuario">
+                <label>Vendedor</label>
+                <br><br>
+                <label>Intereses</label><br><br>
+                <input type="checkbox">
+                <label>Electro</label>
+                <br><br>
+                <input type="checkbox">
+                <label>Moda</label>
+                <br><br>
+                <input type="checkbox">
+                <label>Hogar</label>
+                <br><br>
+                <input type="checkbox">
+                <label>Jugueteria</label>
+                <br><br>
+                <input type="checkbox">
+                <label>Vida sana</label>
+                <br><br>
+                <label>Foto de usuario</label><br><br>
+                <input required type="file" name="fotoDeUsuario" >
+                <br><br>
+                <label>Contraseña</label><br><br>
+                <input class="cuadro-login" type="password" required pattern="[A-Za-z]{2}[0-9]{2}" minlength="4" title="Su contraseña debe contener al menos 2 letras y 2 numeros">
+                <br><br>
+                <label>Confirmar contraseña</label><br><br>
+                <input class="cuadro-login" type="password" required pattern="[A-Za-z]{2}[0-9]{2}" minlength="4" title="Debe confirmar contraseña y esta debe contener al menos 2 letras y 2 numeros">
+                <br><br>
+                <button class="boton-login" type="submit"><a href="./">Enviar</a></button>
+                <button class="boton-login" type="reset" >Borrar</button>
+                <br><br>
+            </div>
+        </form>
+    </div>
+    <br><br><br><br>
+    <footer>
+        <br><br>
+        <div class="horizontal">
+            <div >
+                <div class="iconos">
+                    <i class="far fa-credit-card"></i>
+                </div>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+            <br><br>
+            <div>
+                <div class="iconos">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <br><br>
+            <div>
+                <div class="iconos">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+            </div>
+            <br><br>
+        </div>
+        <p class="margen">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </footer>
+</body>
+</html>
